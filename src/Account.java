@@ -43,7 +43,7 @@ public class Account {
         return balance;
     }
 
-    // Debit an amount to the account
+    // Debit an amount from the account
     public int debit (int amount) {
         if (amount <= balance) {
             this.balance -= amount;
