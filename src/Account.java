@@ -59,6 +59,8 @@ public class Account {
         if (amount <= balance) {
             this.balance -= amount;
             anotherAccount.balance += amount;
+        } else {
+            System.out.println("Amount exceeded balance");
         }
 
         return balance;
