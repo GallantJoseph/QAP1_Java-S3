@@ -37,13 +37,13 @@ public class Account {
     }
 
     // Methods
-    // Credit an amount to the account
+    // Credit an amount to the account and return the new balance
     public int credit (int amount) {
         this.balance += amount;
         return balance;
     }
 
-    // Debit an amount from the account
+    // Debit an amount from the account and return the new balance
     public int debit (int amount) {
         if (amount <= balance) {
             this.balance -= amount;
@@ -54,7 +54,7 @@ public class Account {
         return balance;
     }
 
-    // Transfer an amount from the current account to another account
+    // Transfer an amount from the current account to another account and return the new balance
     public int transferTo(Account anotherAccount, int amount) {
         if (amount <= balance) {
             this.balance -= amount;
